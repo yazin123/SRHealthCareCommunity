@@ -5,22 +5,22 @@ import PropTypes from "prop-types";
 const WhyUsContent = ({ className = "" }) => {
   return (
     <div
-      className={`mx-auto max-w-7xl flex flex-col items-start justify-start pt-0 pb-[25px] pl-0 pr-5 box-border gap-11  text-left text-29xl text-black font-lexend-deca mq850:gap-[22px] ${className}`}
+      className={`mx-auto  max-w-7xl px-3 flex flex-col  items-start justify-start pt-0 pb-[25px]   box-border gap-11  text-left text-29xl text-black font-lexend-deca mq850:gap-[22px] ${className}`}
     >
-      <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
+      <h1 className="m-0  relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
         Why Us?
       </h1>
-      <div className="self-stretch flex flex-col items-start justify-start gap-4 max-w-full text-21xl">
-        <div className="self-stretch flex flex-row items-start justify-start gap-4 max-w-full mq1525:flex-wrap">
+      <div className="self-stretch flex flex-col items-start justify-start gap-4  text-[24px]">
+        <div className="self-stretch flex flex-row items-start justify-start gap-4  mq1525:flex-wrap">
           <ExperienceCardContent
             theRightExperience="The Right Experience"
             yearsOfProvenSuccessInHealthca="Years of proven success in healthcare operations."
           />
-          <div className="flex-1 flex flex-row items-start justify-start relative min-w-[487px] max-w-full mq850:min-w-full mq1525:flex-1">
+          <div className="flex-1 flex flex-row items-start justify-start relative min-w-[487px]  mq850:min-w-full mq1525:flex-1">
             <div className="h-[2143.3px] w-[1269.9px] absolute !m-[0] top-[-1978px] left-[-413.9px]">
-           
+
               <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[1]">
-                
+
                 <div className="absolute top-[0px] left-[284.8px] w-[1244px] h-[1314px]">
                   <div className="absolute top-[507.1px] left-[381.73px] rounded-3xs bg-lightcyan w-[403.1px] h-[403.1px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
                   <div className="absolute top-[0px] left-[283.1px] rounded-mid bg-silver w-[994.8px] h-[1093.8px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
@@ -58,15 +58,15 @@ const WhyUsContent = ({ className = "" }) => {
             />
           </div>
         </div>
-        <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-4 max-w-full text-white">
+        <div className="self-stretch flex flex-row items-start justify-start flex-wrap content-start gap-4  text-white">
           <ExperienceCardContent
             experienceCardContentFlex="1"
             experienceCardContentMinWidth="unset"
             theRightExperience="The Right Economics"
             yearsOfProvenSuccessInHealthca="Solutions that maximize efficiency and minimize costs."
           />
-          <div className="flex-1 rounded-mini bg-darkslateblue-200 flex flex-col items-start justify-start pt-10 pb-[41px] pl-[41px] pr-5 box-border gap-7 min-w-[562px] max-w-full mq850:min-w-full">
-            <div className="w-[749px] h-[236px] relative rounded-mini bg-darkslateblue-200 hidden max-w-full" />
+          <div className="flex-1 rounded-mini bg-darkslateblue-200 flex flex-col items-start justify-start pt-10 pb-[41px] pl-[41px] pr-5 box-border gap-7 min-w-[562px]  mq850:min-w-full">
+            <div className="w-[749px] h-[236px] relative rounded-mini bg-darkslateblue-200 hidden " />
             <h2 className="m-0 relative text-inherit font-normal font-[inherit] inline-block max-w-full z-[1] mq450:text-5xl mq850:text-13xl">
               Discover Services offered by Us
             </h2>
