@@ -17,10 +17,10 @@ const AdministrationCardContent = ({
 
   return (
     <div
-      className={`flex-1 rounded-mini bg-darkslateblue-600 flex flex-row min-h-40 items-center justify-start pt-[25px] px-[26px] pb-6 box-border gap-[18px] min-w-[487px] max-w-full text-left text-13xl text-black font-lexend-deca mq850:flex-wrap mq850:min-w-full ${className}`}
+      className={`flex-1  rounded-mini bg-darkslateblue-600 flex flex-row min-h-40 items-center justify-start pt-[25px] px-2 pb-6 box-border   max-w-full text-left  text-black font-lexend-deca mq850:flex-wrap mq850:min-w-full ${className}`}
     >
       <Image
-        className="h-[62px] w-[62px] relative rounded-smi z-[1]"
+        className="h-[42px] w-[42px] relative rounded-smi z-[1]"
         loading="lazy"
         width={92}
         height={92}

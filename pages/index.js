@@ -44,11 +44,12 @@ const MacBookPro16 = () => {
       <FrameComponent3 />
       <section className="w-[1641px] flex flex-col items-start justify-start pt-0 pb-[100px] pl-5 pr-0 box-border gap-8 max-w-full mq850:gap-4 mq850:pb-5 mq850:box-border mq1225:pb-[27px] mq1225:box-border">
         <WhyUsContent />
-        <FrameComponent2 />
-        <FrameComponent4 />
-        <FrameComponent5 />
-        <FrameComponent6 />
       </section>
+      <FrameComponent2 />
+      <FrameComponent4 />
+      {/* <FrameComponent5 /> */}
+      <FrameComponent6 />
+
       <Footer />
       <footer className="self-stretch [background:linear-gradient(100.75deg,_#41ebbe,_#19b78d)] flex flex-row items-start justify-start py-[22.5px] px-[107px] text-left text-7xl text-black font-lexend-deca mq450:pl-[26px] mq450:pr-[26px] mq450:box-border mq1225:pl-[53px] mq1225:pr-[53px] mq1225:box-border">
         <div className="relative font-light mq450:text-2xl">

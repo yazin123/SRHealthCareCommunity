@@ -52,7 +52,7 @@ module.exports = {
       },
     },
     fontSize: {
-      "normalss": "12",
+      "normalss": "12px",
       "7xl": "26px",
       "2xl": "21px",
       "5xl": "24px",

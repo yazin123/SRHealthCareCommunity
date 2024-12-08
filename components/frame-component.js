@@ -79,22 +79,22 @@ const FrameComponent = ({ className = "" }) => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1  sm:px-3 ">
-            <Link href="/">
+            <Link className='[text-decoration:none]' href="/">
               <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
                 Home
               </span>
             </Link>
-            <Link href="/#about">
+            <Link className='[text-decoration:none]' href="/#about">
               <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
                 About us
               </span>
             </Link>
-            <Link href="/#services">
+            <Link className='[text-decoration:none]' href="/#services">
               <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
                 Services
               </span>
             </Link>
-            <Link href="/#contact">
+            <Link className='[text-decoration:none]' href="/#contact">
               <span className="block px-5 py-3 [text-decoration:none] font-lexend-deca rounded-md text-sm font-medium [background:linear-gradient(96.69deg,_#41ebbe,_#19b78d)] hover:[background:linear-gradient(96.69deg,_#41ebbe,_#217e65)]  text-white cursor-pointer">
                 Contact Us
               </span>

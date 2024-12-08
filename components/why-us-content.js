@@ -19,15 +19,15 @@ const WhyUsContent = ({ className = "" }) => {
           <div className="flex-1 flex flex-row items-start justify-start relative min-w-[487px] max-w-full mq850:min-w-full mq1525:flex-1">
             <div className="h-[2143.3px] w-[1269.9px] absolute !m-[0] top-[-1978px] left-[-413.9px]">
            
-              <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[1]">
+              <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[0]">
                 
-                <div className="absolute top-[0px] left-[284.8px] w-[1244px] h-[1314px]">
+                <div className="absolute top-[0px] left-[284.8px] w-[1244px] h-[1314px] ">
                   <div className="absolute top-[507.1px] left-[381.73px] rounded-3xs bg-lightcyan w-[403.1px] h-[403.1px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
                   <div className="absolute top-[0px] left-[283.1px] rounded-mid bg-silver w-[994.8px] h-[1093.8px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
-                  <div className="absolute top-[563.38px] left-[194.2px] rounded-mid bg-darkslateblue-500 w-[538.9px] h-[538.9px] [transform:_rotate(-15deg)] [transform-origin:0_0] z-[1]" />
+                  <div className="absolute top-[563.38px] left-[194.2px] rounded-mid bg-darkslateblue-500 w-[538.9px] h-[538.9px] [transform:_rotate(-15deg)] [transform-origin:0_0] " />
                 </div>
                 <Image
-                  className="absolute top-[560.9px] left-[0px] w-[1409px] h-[901px] object-cover z-[2]"
+                  className="absolute top-[560.9px] mq850:hidden left-[0px] w-[1409px] h-[901px] object-cover z-[2]"
                   width={1469}
                   height={981}
                   alt=""
@@ -35,7 +35,7 @@ const WhyUsContent = ({ className = "" }) => {
                 />
               </div>
               <Image
-                className="absolute top-[896px] left-[434.9px] rounded-12xl w-[850px] h-[887px] z-[3]"
+                className="absolute top-[896px] mq850:hidden left-[434.9px] rounded-12xl w-[850px] h-[887px] z-[3]"
                 loading="lazy"
                 width={850}
                 height={887}
@@ -43,7 +43,7 @@ const WhyUsContent = ({ className = "" }) => {
                 src="/rectangle-6.svg"
               />
               <Image
-                className="absolute top-[866px] left-[275.9px] w-[1498.5px] h-[1277.3px] object-contain z-[4]"
+                className="absolute top-[866px] mq850:hidden  left-[275.9px] w-[1498.5px] h-[1277.3px] object-contain z-[4]"
                 width={1499}
                 height={1277}
                 alt=""

@@ -2,164 +2,190 @@ import Image from "next/image";
 import PropTypes from "prop-types";
 
 const FrameComponent4 = ({ className = "" }) => {
-  return (
-    <div
-      className={`self-stretch h-[841px] scale-90 relative text-left text-5xl text-black font-lexend-deca ${className}`}
-    >
-      <h1 className="m-0 absolute top-[29px] left-[0px] text-29xl font-medium font-[inherit] inline-block w-[778px] h-[60px] mq450:text-10xl mq850:text-19xl">
-        Introducing our Application
-      </h1>
-      <div className="absolute top-[103px] left-[0px] font-light text-darkslategray inline-block w-[901px] h-[30px] mq450:text-lgi">
-        Our Mobile Application for SR Healthcare Community
-      </div>
-      <button className="cursor-pointer [border:none] py-[21px] px-[26px] bg-darkslateblue-200 absolute top-[708px] left-[0px] rounded-lg flex flex-row items-start justify-start gap-6">
+  const backgroundStyle = {
+    backgroundImage: "url('/star-14.svg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
 
-        <div className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl">
-          Install Now
+  return (
+    <div className={`
+      flex mq850:flex-wrap-reverse
+      items-center justify-between 
+      w-full max-w-7xl 
+      mx-auto 
+       py-8  px-2
+      space-y-8 lg:space-y-0 
+      font-lexend-deca 
+      ${className}
+    `}>
+      {/* Text Content */}
+      <div className="w-1/2 mq850:w-full space-y-2  lg:text-left">
+        <div>
+          <h1 className="
+            text-7xl
+            font-medium 
+            text-black 
+            mb-4
+          ">
+            Introducing our Application
+          </h1>
+          <p className="
+            text-lgi 
+            text-darkslategray 
+            mb-6
+          ">
+            Our Mobile Application for SR Healthcare Community
+          </p>
         </div>
-      </button>
-      <div className="absolute top-[165px] left-[73px] inline-block w-[692px] mq450:text-lgi">{`Social network connecting medical & healthcare professionals`}</div>
-      <div className="absolute top-[167px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          loading="lazy"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
+
+        {/* Features with Star Icons */}
+        <div className="px-4">
+          {[
+            "Social network connecting medical & healthcare professionals",
+            "Knowledge hub for students, professors, doctors and others",
+            "Informative blogs, trending updates, and expert discussion panels",
+            "Job search and opportunity postings platform",
+            "Expert-led query resolution at your fingertips",
+            "Access to live and recorded seminars on-demand"
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className="
+                flex 
+                items-start 
+                space-x-2
+                justify-start 
+               
+              "
+            >
+              <div
+                className="
+                  relative 
+                  w-[45px] h-[45px] 
+                  flex-shrink-0 
+                  flex justify-center items-center
+                "
+                style={backgroundStyle}
+              >
+                <Image
+                  className="
+                    absolute 
+                    top-1/4 left-1/4 
+                    rounded-5xs-8 
+                    w-[20px] h-[20px] 
+                    z-10
+                  "
+                  width={29}
+                  height={29}
+                  alt="Star detail"
+                  src="/star-15.svg"
+                />
+              </div>
+              <p className=" text-left">{feature}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Install Button */}
+        <div className="flex justify-start lg:justify-start">
+          <button className="
+            bg-darkslateblue-200 
+            text-white 
+            text-lgi
+              font-lexend-deca
+            px-6 py-3 
+            rounded-lg  
+            flex items-center 
+            gap-4 
+            mt-6
+            hover:bg-darkslateblue-100 
+            transition-colors 
+            duration-300
+          ">
+            Install Now
+          </button>
+        </div>
       </div>
-      <div className="absolute top-[269.5px] left-[73px] inline-block w-[695px] h-[30px] mq450:text-lgi">
-        Knowledge hub for students, professors, doctors and others
-      </div>
-      <div className="absolute top-[257px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          loading="lazy"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
-      </div>
-      <div className="absolute top-[346.3px] left-[73px] inline-block w-[676px] mq450:text-lgi">
-        Informative blogs, trending updates, and expert discussion panels
-      </div>
-      <div className="absolute top-[346px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          loading="lazy"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
-      </div>
-      <div className="absolute top-[448.5px] left-[73px] inline-block w-[537px] h-[30px] mq450:text-lgi">
-        Job search and opportunity postings platform
-      </div>
-      <div className="absolute top-[436px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          loading="lazy"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
-      </div>
-      <div className="absolute top-[535.5px] left-[73px] inline-block w-[528px] h-[30px] mq450:text-lgi">
-        Expert-led query resolution at your fingertips
-      </div>
-      <div className="absolute top-[523px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
-      </div>
-      <div className="absolute top-[622.5px] left-[73px] inline-block w-[574px] h-[30px] mq450:text-lgi">
-        Access to live and recorded seminars on-demand
-      </div>
-      <div className="absolute top-[610px] left-[0px] w-[55px] h-[55px]">
-        <Image
-          className="absolute top-[0px] left-[0px] rounded-5xs-8 w-full h-full"
-          width={55}
-          height={55}
-          alt=""
-          src="/star-14.svg"
-        />
-        <Image
-          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
-          width={29}
-          height={29}
-          alt=""
-          src="/star-15.svg"
-        />
-      </div>
-      <div className="absolute h-full top-[0px] bottom-[0px] left-[749px] w-[872px]">
-        <Image
-          className="absolute top-[0px] left-[0px] w-[1078px] h-[801px] object-cover z-[1]"
-          width={1078}
-          height={801}
-          alt=""
-          src="/image-3@2x.png"
-        />
-        <div className="absolute top-[669px] left-[71px] w-[801px] h-[172px]">
-          <div className="absolute h-full top-[0px] bottom-[0px] left-[0px] [filter:blur(19px)] bg-white w-[865px] z-[2]" />
+
+      {/* Phone Image Container */}
+      <div className="
+        w-1/2 mq850:w-full 
+        mt-8 lg:mt-0 
+        flex flex-col 
+        items-center 
+        justify-center
+      ">
+        <div className="
+          relative 
+          w-full 
+          max-w-md 
+          transform 
+          scale-75 
+          sm:scale-90 
+          lg:scale-100
+        ">
           <Image
-            className="absolute top-[39px] left-[422px] rounded-2xs-2 w-[272px] h-[80.8px] object-cover z-[3]"
-            loading="lazy"
-            width={272}
-            height={81}
-            alt=""
-            src="/image-4@2x.png"
+            className="
+              w-full 
+              h-auto 
+              object-contain
+            "
+            width={1078}
+            height={801}
+            alt="Phone application mockup"
+            src="/image-3@2x.png"
+            priority
           />
-          <Image
-            className="absolute top-[39px] left-[141px] rounded-lg w-[271px] h-[81px] object-cover z-[3]"
-            loading="lazy"
-            width={271}
-            height={81}
-            alt=""
-            src="/image-5@2x.png"
-          />
+
+          {/* App Store Buttons */}
+          <div className="
+            mt-4 
+            flex 
+            flex-col 
+            sm:flex-row 
+            justify-center 
+            space-y-4 
+            sm:space-y-0 
+            sm:space-x-4
+          ">
+            <Image
+              className="
+                rounded-2xs-2 
+                w-[250px] 
+                sm:w-[272px] 
+                h-auto 
+                object-contain
+                cursor-pointer
+                hover:opacity-80
+                transition-opacity
+                duration-300
+              "
+              loading="lazy"
+              width={272}
+              height={81}
+              alt="App Store"
+              src="/image-4@2x.png"
+            />
+            <Image
+              className="
+                rounded-lg 
+                w-[250px] 
+                sm:w-[271px] 
+                h-auto 
+                object-contain
+                cursor-pointer
+                hover:opacity-80
+                transition-opacity
+                duration-300
+              "
+              loading="lazy"
+              width={271}
+              height={81}
+              alt="Google Play"
+              src="/image-5@2x.png"
+            />
+          </div>
         </div>
       </div>
     </div>
