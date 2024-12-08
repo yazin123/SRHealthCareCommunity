@@ -155,9 +155,9 @@ const FrameComponent6 = ({ className = "" }) => {
                     </h3>
                   </div>
                   <div className="relative text-5xl font-light text-darkslategray inline-block max-w-full mq450:text-lgi">
-                    <p className="m-0">123 Greenfield Avenue, Suite 456,</p>
-                    <p className="m-0">Bangalore, Karnataka, 560001,</p>
-                    <p className="m-0">India</p>
+                  <p className="m-0">17/305, First Floor, Thrikkakara</p>
+              <p className="m-0">Sea Port Airport Road, Chittethukara, 682030,</p>
+              <p className="m-0">Kakkanad, Kochi, Kerala, India</p>
                   </div>
                 </div>
                 <div className="relative text-5xl [text-decoration:underline] font-light text-darkslategray mq450:text-lgi">
@@ -177,7 +177,7 @@ const FrameComponent6 = ({ className = "" }) => {
                   />
                 </div>
                 <div className="relative font-light mq450:text-lgi">
-                  admin@srhealthcare.com
+                  info@srhealthcarecommunity.com
                 </div>
               </div>
               <div className="flex flex-row items-start justify-start gap-2.5">
@@ -191,7 +191,7 @@ const FrameComponent6 = ({ className = "" }) => {
                   />
                 </div>
                 <div className="relative font-light mq450:text-lgi">
-                  0091 974740 5877
+                +91 9447008356. +91 9447108356
                 </div>
               </div>
             </div>

@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const WhyUsContent = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1534px] scale-90 flex flex-col items-start justify-start pt-0 pb-[25px] pl-0 pr-5 box-border gap-11 max-w-full text-left text-29xl text-black font-lexend-deca mq850:gap-[22px] ${className}`}
+      className={`mx-auto max-w-7xl flex flex-col items-start justify-start pt-0 pb-[25px] pl-0 pr-5 box-border gap-11  text-left text-29xl text-black font-lexend-deca mq850:gap-[22px] ${className}`}
     >
       <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
         Why Us?
@@ -19,12 +19,12 @@ const WhyUsContent = ({ className = "" }) => {
           <div className="flex-1 flex flex-row items-start justify-start relative min-w-[487px] max-w-full mq850:min-w-full mq1525:flex-1">
             <div className="h-[2143.3px] w-[1269.9px] absolute !m-[0] top-[-1978px] left-[-413.9px]">
            
-              <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[0]">
+              <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[1]">
                 
-                <div className="absolute top-[0px] left-[284.8px] w-[1244px] h-[1314px] ">
+                <div className="absolute top-[0px] left-[284.8px] w-[1244px] h-[1314px]">
                   <div className="absolute top-[507.1px] left-[381.73px] rounded-3xs bg-lightcyan w-[403.1px] h-[403.1px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
                   <div className="absolute top-[0px] left-[283.1px] rounded-mid bg-silver w-[994.8px] h-[1093.8px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
-                  <div className="absolute top-[563.38px] left-[194.2px] rounded-mid bg-darkslateblue-500 w-[538.9px] h-[538.9px] [transform:_rotate(-15deg)] [transform-origin:0_0] " />
+                  <div className="absolute top-[563.38px] left-[194.2px] rounded-mid bg-darkslateblue-500 w-[538.9px] h-[538.9px] [transform:_rotate(-15deg)] [transform-origin:0_0] z-[1]" />
                 </div>
                 <Image
                   className="absolute top-[560.9px] mq850:hidden left-[0px] w-[1409px] h-[901px] object-cover z-[2]"

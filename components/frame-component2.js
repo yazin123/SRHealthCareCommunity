@@ -80,9 +80,10 @@ const HealthcareServices = () => {
   ];
 
   return (
-    <div className=" mx-auto max-w-7xl px-2  py-12 font-lexend-deca">
+    <div className=" mx-auto max-w-7xl px-2  py-12 font-lexend-deca" id='services'>
       <div className="text-center  mb-12">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Expertise</h1>
+        <h1 className="text-21xl font-bold text-gray-800 mb-4 mq450:text-10xl mq850:text-19xl">Our Expertise</h1>
+        
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           End-to-End Solutions for Efficient, Patient-Centric Healthcare Facilities
         </p>

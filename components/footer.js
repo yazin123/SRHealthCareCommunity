@@ -19,8 +19,9 @@ const Footer = ({ className = "" }) => {
 
         <div className="flex flex-col items-start justify-start pt-[35px] pb-0 pl-0 pr-4 box-border max-w-full t text-darkslategray">
           <div className="flex flex-row items-start justify-start gap-2.5">
-            <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-              <div className="flex flex-col items-start justify-start gap-8">
+
+            <div className="flex flex-col items-start justify-start gap-[26px]">
+              <div className="relative font-light flex justify-start items-center gap-2 ">
                 <Image
                   className="w-6 h-6 relative"
                   loading="lazy"
@@ -29,6 +30,9 @@ const Footer = ({ className = "" }) => {
                   alt=""
                   src="/vuesaxlinearsms.svg"
                 />
+                info@srhealthcarecommunity.com
+              </div>
+              <div className="relative font-light flex justify-start items-center gap-2 ">
                 <Image
                   className="w-6 h-6 relative"
                   loading="lazy"
@@ -36,15 +40,7 @@ const Footer = ({ className = "" }) => {
                   height={24}
                   alt=""
                   src="/vuesaxlinearcallcalling.svg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-start gap-[26px]">
-              <div className="relative font-light ">
-                info@srhealthcarecommunity.com
-              </div>
-              <div className="relative font-light ">
-                +91 9447008356. +91 9447108356
+                />  +91 9447008356, +91 9447108356
               </div>
             </div>
           </div>
