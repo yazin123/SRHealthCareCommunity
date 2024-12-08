@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 const FrameComponent3 = ({ className = "" }) => {
   return (
-    <section
+    <section id="about"
       className={`self-stretch flex flex-row items-start justify-center pt-0 pb-[88px] pl-5 pr-[716px] box-border max-w-full text-left text-29xl text-black font-lexend-deca mq450:pr-5 mq450:box-border mq850:pr-[179px] mq850:pb-[57px] mq850:box-border mq1225:pr-[358px] mq1225:box-border ${className}`}
     >
-      <div className="w-[818px] flex flex-col items-start justify-start gap-[26px] max-w-full">
+      <div className="w-[818px] flex flex-col items-start justify-start gap-[26px] max-w-full scale-75">
         <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
-          Who We Are?
+          Who are We?
         </h1>
         <div className="self-stretch flex flex-col items-start justify-start gap-[33px] max-w-full text-13xl text-darkslategray mq450:gap-4">
           <div className="relative font-light mq450:text-lgi mq850:text-7xl">
@@ -70,9 +70,9 @@ const FrameComponent3 = ({ className = "" }) => {
                     src="/vuesaxlinearcall.svg"
                   />
                 </div>
-                <div className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl">
+                <a href="tel:+919447008356" className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl [text-decoration:none]">
                   Get in touch
-                </div>
+                </a>
               </button>
             </div>
             <div className="flex flex-col items-start justify-start pt-[5px] px-0 pb-0">

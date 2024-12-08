@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 
 const FrameComponent2 = ({ className = "" }) => {
   return (
-    <div
-      className={`w-[1534px] flex flex-col items-start justify-start pt-0 pb-5 pl-0 pr-5 box-border gap-[25px] max-w-full text-left text-29xl text-black font-lexend-deca ${className}`}
+    <div id="services"
+      className={`mx-auto max-w-7xl flex flex-col items-start justify-start pt-0 pb-5 pl-0 pr-5 box-border gap-[25px]  text-left text-29xl text-black font-lexend-deca ${className}`}
     >
       <div className="w-[900px] flex flex-col items-start justify-start pt-0 px-0 pb-[11px] box-border gap-3.5 max-w-full">
         <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
@@ -73,12 +73,12 @@ const FrameComponent2 = ({ className = "" }) => {
               src="/vuesaxlinearcall-2.svg"
             />
           </div>
-          <div className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl">
+          <a href="tel:+919447008356" className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl [text-decoration:none]">
             Get in touch with the Team
-          </div>
+          </a>
         </button>
         <button className="cursor-pointer border-darkslateblue-400 border-[2px] border-solid py-[18px] px-11 bg-[transparent] rounded-lg box-border flex flex-row items-start justify-start max-w-full hover:bg-darkslateblue-700 hover:border-darkslateblue-100 hover:border-[2px] hover:border-solid hover:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
-          <div className="relative text-9xl font-lexend-deca text-darkslateblue-200 text-left mq450:text-3xl">
+          <div className="relative text-9xl font-lexend-deca text-darkslateblue-200 text-left mq450:text-3xl ">
             View Testimonials
           </div>
         </button>

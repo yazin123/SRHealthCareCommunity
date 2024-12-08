@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const FrameComponent4 = ({ className = "" }) => {
   return (
     <div
-      className={`self-stretch h-[841px] relative text-left text-5xl text-black font-lexend-deca ${className}`}
+      className={`self-stretch h-[841px] scale-90 relative text-left text-5xl text-black font-lexend-deca ${className}`}
     >
       <h1 className="m-0 absolute top-[29px] left-[0px] text-29xl font-medium font-[inherit] inline-block w-[778px] h-[60px] mq450:text-10xl mq850:text-19xl">
         Introducing our Application
@@ -13,17 +13,9 @@ const FrameComponent4 = ({ className = "" }) => {
         Our Mobile Application for SR Healthcare Community
       </div>
       <button className="cursor-pointer [border:none] py-[21px] px-[26px] bg-darkslateblue-200 absolute top-[708px] left-[0px] rounded-lg flex flex-row items-start justify-start gap-6">
-        <div className="flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-          <Image
-            className="w-[29px] h-[29px] relative"
-            width={29}
-            height={29}
-            alt=""
-            src="/vuesaxlinearcall-2.svg"
-          />
-        </div>
+
         <div className="relative text-9xl font-lexend-deca text-white text-left mq450:text-3xl">
-          Get in touch with the Team
+          Install Now
         </div>
       </button>
       <div className="absolute top-[165px] left-[73px] inline-block w-[692px] mq450:text-lgi">{`Social network connecting medical & healthcare professionals`}</div>
@@ -135,12 +127,11 @@ const FrameComponent4 = ({ className = "" }) => {
           src="/star-14.svg"
         />
         <Image
-          className="absolute top-[7.6px] left-[7.1px] rounded-5xs-8 w-[40.7px] h-[40.7px] object-contain z-[1]"
-          loading="lazy"
-          width={41}
-          height={41}
+          className="absolute top-[13.5px] left-[13px] rounded-5xs-8 w-[29px] h-[29px] z-[1]"
+          width={29}
+          height={29}
           alt=""
-          src="/star-25.svg"
+          src="/star-15.svg"
         />
       </div>
       <div className="absolute h-full top-[0px] bottom-[0px] left-[749px] w-[872px]">

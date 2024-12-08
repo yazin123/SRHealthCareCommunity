@@ -11,10 +11,10 @@ import Footer from "../components/footer";
 
 const MacBookPro16 = () => {
   return (
-    <div className="w-full relative rounded-[35px] bg-white overflow-hidden flex flex-col items-end justify-start pt-8 px-0 pb-0 box-border gap-[35px] leading-[normal] tracking-[normal] mq450:gap-[17px]">
+    <div className="w-full  relative rounded-[35px] bg-white overflow-hidden flex flex-col items-end justify-start pt-8 px-0 pb-0 box-border gap-[35px] leading-[normal] tracking-[normal] mq450:gap-[17px]">
       <FrameComponent />
       <FrameComponent1 />
-      <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[76px] pl-5 pr-[757px] box-border max-w-full text-left text-5xl text-darkslategray font-lexend-deca mq450:pr-5 mq450:box-border mq850:pr-[189px] mq850:box-border mq1225:pr-[378px] mq1225:box-border">
+      {/* <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[76px] pl-5 pr-[757px] box-border max-w-full text-left text-5xl text-darkslategray font-lexend-deca mq450:pr-5 mq450:box-border mq850:pr-[189px] mq850:box-border mq1225:pr-[378px] mq1225:box-border">
         <div className="w-[777px] flex flex-col items-start justify-start gap-[42px] max-w-full mq450:gap-[21px]">
           <div className="self-stretch relative font-light mq450:text-lgi">
             Trusted by
@@ -40,7 +40,7 @@ const MacBookPro16 = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <FrameComponent3 />
       <section className="w-[1641px] flex flex-col items-start justify-start pt-0 pb-[100px] pl-5 pr-0 box-border gap-8 max-w-full mq850:gap-4 mq850:pb-5 mq850:box-border mq1225:pb-[27px] mq1225:box-border">
         <WhyUsContent />

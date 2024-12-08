@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const FrameComponent5 = ({ className = "" }) => {
   return (
     <div
-      className={`w-[1534px] flex flex-col items-start justify-start pt-0 pb-[26px] pl-0 pr-5 box-border gap-[25px] max-w-full text-left text-29xl text-black font-lexend-deca ${className}`}
+      className={`w-[1534px] scale-75 flex flex-col items-start justify-start pt-0 pb-[26px] pl-0 pr-5 box-border gap-[25px] max-w-full text-left text-29xl text-black font-lexend-deca ${className}`}
     >
       <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
         Proven Results Across the Globe
