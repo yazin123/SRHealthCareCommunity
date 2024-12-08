@@ -8,7 +8,7 @@ const FrameComponent3 = ({ className = "" }) => {
     >
       <div className="w-[818px] flex flex-col items-start justify-start gap-[26px] max-w-full">
         <h1 className="m-0 w-[778px] relative text-inherit font-medium font-[inherit] inline-block max-w-full mq450:text-10xl mq850:text-19xl">
-          Who are We?
+          Who We Are?
         </h1>
         <div className="self-stretch flex flex-col items-start justify-start gap-[33px] max-w-full text-13xl text-darkslategray mq450:gap-4">
           <div className="relative font-light mq450:text-lgi mq850:text-7xl">

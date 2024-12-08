@@ -1,44 +1,108 @@
+import React, { useState } from 'react';
 import Image from "next/image";
 import PropTypes from "prop-types";
+import Link from 'next/link';
 
 const FrameComponent = ({ className = "" }) => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div
-      className={`self-stretch flex flex-row items-start justify-center pt-0 pb-[90px] pl-5 pr-[46px] box-border max-w-full mq1225:pr-[23px] mq1225:box-border ${className}`}
-    >
-      <header className="w-[1540px] flex flex-row items-end justify-between gap-5 max-w-full">
+    <nav className="bg-white text-black fixed w-full top-0 z-10 shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <Image
-          className="h-[122px] w-[299px] relative object-cover"
-          loading="lazy"
+          className="h-20 w-auto cursor-pointer"
           width={299}
           height={122}
-          alt=""
           src="/sr-hc-logo01-1@2x.png"
+          alt="Healthcare Community"
         />
-        <div className="w-[672px] flex flex-col items-start justify-end pt-0 px-0 pb-[22px] box-border max-w-full">
-          <div className="self-stretch flex flex-row items-start justify-start gap-[74px] max-w-full mq450:gap-[18px] mq850:gap-[37px]">
-            <nav className="m-0 flex-1 flex flex-col items-start justify-start pt-[22px] px-0 pb-0 box-border max-w-full mq1225:hidden">
-              <nav className="m-0 self-stretch h-[33px] relative text-left text-7xl text-black font-lexend-deca">
-                <a className="[text-decoration:none] absolute top-[0px] left-[0px] font-light text-[inherit] inline-block w-[75px] h-[33px] min-w-[75px]">
-                  Home
-                </a>
-                <a className="[text-decoration:none] absolute top-[0px] left-[108px] font-light text-[inherit] inline-block w-[111px] h-[33px] min-w-[111px] whitespace-nowrap">
-                  About us
-                </a>
-                <a className="[text-decoration:none] absolute top-[0px] left-[252px] font-light text-[inherit] inline-block w-[104px] h-[33px] min-w-[104px]">
-                  Services
-                </a>
-              </nav>
-            </nav>
-            <button className="cursor-pointer [border:none] py-[21px] pl-[47px] pr-[46px] bg-[transparent] rounded-lg [background:linear-gradient(96.69deg,_#41ebbe,_#19b78d)] flex flex-row items-start justify-start">
-              <a className="[text-decoration:none] relative text-9xl font-lexend-deca text-black text-left">
+        <div className="mq850:hidden items-center space-x-4">
+          <a href="/" className="px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+            Home
+          </a>
+          <a href="/#about" className="px-3 py-2 [text-decoration:none] font-lexend-deca rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+            About us
+          </a>
+          <a href="/#services" className="px-3 py-2 [text-decoration:none] font-lexend-deca rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+            Services
+          </a>
+          <a href="/#contact" className="px-5 py-3 [text-decoration:none] font-lexend-deca rounded-md text-sm font-medium [background:linear-gradient(96.69deg,_#41ebbe,_#19b78d)] hover:[background:linear-gradient(96.69deg,_#41ebbe,_#217e65)]  text-white cursor-pointer">
+            Contact Us
+          </a>
+        </div>
+        <div className="-mr-2 mq850:flex hidden">
+          <button
+            onClick={toggleMenu}
+            className="inline-flex items-center justify-center p-2 rounded-md text-[#19B78D]  focus:outline-none"
+          >
+            <span className="sr-only">Open main menu</span>
+            {isOpen ? (
+              <svg
+                className="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+        </div>
+      </div>
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="px-2 pt-2 pb-3 space-y-1  sm:px-3 ">
+            <Link href="/">
+              <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+                Home
+              </span>
+            </Link>
+            <Link href="/#about">
+              <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+                About us
+              </span>
+            </Link>
+            <Link href="/#services">
+              <span className="block px-3 [text-decoration:none] font-lexend-deca py-2 rounded-md text-sm font-medium hover:text-[#19B78D] text-black cursor-pointer">
+                Services
+              </span>
+            </Link>
+            <Link href="/#contact">
+              <span className="block px-5 py-3 [text-decoration:none] font-lexend-deca rounded-md text-sm font-medium [background:linear-gradient(96.69deg,_#41ebbe,_#19b78d)] hover:[background:linear-gradient(96.69deg,_#41ebbe,_#217e65)]  text-white cursor-pointer">
                 Contact Us
-              </a>
-            </button>
+              </span>
+            </Link>
           </div>
         </div>
-      </header>
-    </div>
+      )}
+    </nav>
   );
 };
 
