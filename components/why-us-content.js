@@ -27,7 +27,7 @@ const WhyUsContent = ({ className = "" }) => {
                   <div className="absolute top-[563.38px] left-[194.2px] rounded-mid bg-darkslateblue-500 w-[538.9px] h-[538.9px] [transform:_rotate(-15deg)] [transform-origin:0_0] z-[1]" />
                 </div>
                 <Image
-                  className="absolute top-[560.9px] mq850:hidden left-[0px] w-[1409px] h-[901px] object-cover z-[2]"
+                  className="absolute top-[740.9px] mq850:hidden left-[0px] w-[1409px] h-[701px] object-contain z-[2]"
                   width={1469}
                   height={981}
                   alt=""
