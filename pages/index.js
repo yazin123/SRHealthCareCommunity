@@ -11,7 +11,7 @@ import Footer from "../components/footer";
 
 const MacBookPro16 = () => {
   return (
-    <div className="w-full  relative rounded-[35px] bg-white overflow-hidden flex flex-col items-end justify-start pt-8 px-0 pb-0 box-border gap-[35px] leading-[normal] tracking-[normal] mq450:gap-[17px]">
+    <div className="w-full  relative  bg-white overflow-hidden flex flex-col items-end justify-start pt-8 px-0 pb-0 box-border gap-[35px] leading-[normal] tracking-[normal] mq450:gap-[17px]">
       <FrameComponent />
       <FrameComponent1 />
       {/* <section className="self-stretch flex flex-row items-start justify-center pt-0 pb-[76px] pl-5 pr-[757px] box-border max-w-full text-left text-5xl text-darkslategray font-lexend-deca mq450:pr-5 mq450:box-border mq850:pr-[189px] mq850:box-border mq1225:pr-[378px] mq1225:box-border">
@@ -52,8 +52,8 @@ const MacBookPro16 = () => {
 
       <Footer />
       <footer className="self-stretch [background:linear-gradient(100.75deg,_#41ebbe,_#19b78d)] flex flex-row items-start justify-start py-[22.5px] px-[107px] text-left text-7xl text-black font-lexend-deca mq450:pl-[26px] mq450:pr-[26px] mq450:box-border mq1225:pl-[53px] mq1225:pr-[53px] mq1225:box-border">
-        <div className="relative font-light mq450:text-2xl">
-          © 2024 SR First Aid Healthcare Pvt Ltd. All rights reserved.
+        <div className="relative font-light text-[12px] scale-">
+          © 2024 SR Healthcare Community, All rights reserved.
         </div>
       </footer>
     </div>
