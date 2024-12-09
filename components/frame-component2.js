@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
   Briefcase, Users, TrendingUp, Shield, 
   Server, Activity, DollarSign 
 } from 'lucide-react';
 
 const ServiceCard = ({ icon: Icon, title, description }) => {
-  const [isHovered, setIsHovered] = useState(true);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
+    <motion.div 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true }}
       className="relative w-full md:w-[calc(50%-16px)] m-2 group"
       onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
         <div className="p-6 flex items-center">
-          <div className="bg-blue-100 p-3 rounded-full mr-4">
+          <div className="bg-aquamarine/50 p-3 rounded-full mr-4">
             <Icon className="text-blue-600" size={32} />
           </div>
           <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
@@ -31,7 +36,7 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -80,14 +85,27 @@ const HealthcareServices = () => {
   ];
 
   return (
-    <div className=" mx-auto max-w-7xl px-2  py-12 font-lexend-deca" id='services'>
-      <div className="text-center  mb-12">
-        <h1 className="text-21xl font-bold text-gray-800 mb-4 mq450:text-10xl mq850:text-19xl">Our Expertise</h1>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+      className="mx-auto max-w-7xl px-2 py-12 font-lexend-deca" 
+      id='services'
+    >
+      <motion.div 
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+      >
+        <h1 className="text-21xl font-bold text-gray-800 mb-4 mq450:text-10xl mq850:text-19xl">
+          Our Expertise
+        </h1>
         
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           End-to-End Solutions for Efficient, Patient-Centric Healthcare Facilities
         </p>
-      </div>
+      </motion.div>
       
       <div className="grid mq850:grid-cols-1 grid-cols-2 gap-3 justify-center items-center">
         {services.map((service, index) => (
@@ -100,7 +118,12 @@ const HealthcareServices = () => {
         ))}
       </div>
 
-      <div className="flex justify-center space-x-4 mt-12">
+      <motion.div 
+        initial={{ y: 50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="flex justify-center space-x-4 mt-12"
+      >
         <a href='tel:+919447008356' className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center [text-decoration:none]">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" className="mr-2">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
@@ -110,8 +133,8 @@ const HealthcareServices = () => {
         <button className="border-2 font-lexend-deca border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors bg-white">
           View Testimonials
         </button>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

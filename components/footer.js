@@ -21,7 +21,7 @@ const Footer = ({ className = "" }) => {
           <div className="flex flex-row items-start justify-start gap-2.5">
 
             <div className="flex flex-col items-start justify-start gap-[26px]">
-              <div className="relative font-light flex justify-start items-center gap-2 ">
+              <a href="mailto:info@srhealthcarecommunity.com" className="relative [text-decoration:none] text-black font-light flex justify-start items-center gap-2 ">
                 <Image
                   className="w-6 h-6 relative"
                   loading="lazy"
@@ -31,7 +31,7 @@ const Footer = ({ className = "" }) => {
                   src="/vuesaxlinearsms.svg"
                 />
                 info@srhealthcarecommunity.com
-              </div>
+              </a>
               <div className="relative font-light flex justify-start items-center gap-2 ">
                 <Image
                   className="w-6 h-6 relative"
@@ -40,7 +40,7 @@ const Footer = ({ className = "" }) => {
                   height={24}
                   alt=""
                   src="/vuesaxlinearcallcalling.svg"
-                />  +91 9447008356, +91 9447108356
+                /> <a href="tel:+919447008356" className="[text-decoration:none] text-black" > +91 9447008356 </a>  ,<a href="tel:+919447108356" className="[text-decoration:none] text-black" > +91 9447108356 </a>
               </div>
             </div>
           </div>
