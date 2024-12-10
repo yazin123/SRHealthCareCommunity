@@ -78,7 +78,7 @@ const WhyUsContent = ({ className = "" }) => {
             variants={itemVariants}
             className="flex-1 flex flex-row items-start justify-start relative min-w-[487px] mq850:min-w-full mq1525:flex-1"
           >
-            <div className="h-[2143.3px] w-[1269.9px] absolute !m-[0] top-[-1778px] left-[-413.9px]">
+            <div className="h-[2143.3px] w-[1269.9px] absolute !m-[0] top-[-1578px] left-[-380.9px]">
               <div className="absolute top-[-324.9px] left-[56.9px] w-[1528.8px] h-[1441.9px] z-[1]">
                 <div className="absolute top-[100px] left-[244.8px] w-[1244px] h-[1314px]">
                   <div className="absolute top-[507.1px] left-[381.73px] rounded-3xs bg-lightcyan w-[403.1px] h-[403.1px] [transform:_rotate(15deg)] [transform-origin:0_0]" />
@@ -91,7 +91,7 @@ const WhyUsContent = ({ className = "" }) => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
                   <Image
-                    className="absolute top-[740.9px] mq850:hidden left-[0px] w-[1409px] h-[601px] object-contain z-[2]"
+                    className="absolute top-[740.9px] mq850:hidden left-[0px] w-[1609px] h-[601px] object-contain z-[2]"
                     width={1469}
                     height={981}
                     alt=""
@@ -100,7 +100,7 @@ const WhyUsContent = ({ className = "" }) => {
                 </motion.div>
               </div>
               <Image
-                className="absolute top-[896px] mq850:hidden left-[424.9px] rounded-12xl w-[850px] h-[687px] z-[3]"
+                className="absolute top-[896px] mq850:hidden right-[0px]  w-[950px] h-[587px] z-[3]"
                 loading="lazy"
                 width={850}
                 height={887}
@@ -108,7 +108,7 @@ const WhyUsContent = ({ className = "" }) => {
                 src="/rectangle-6.svg"
               />
               <Image
-                className="absolute top-[666px] mq850:hidden -right-64 w-[1298.5px] h-[1277.3px] object-contain z-[4]"
+                className="absolute top-[666px] mq850:hidden -right-64 w-[1198.5px] h-[1097.3px] object-contain z-[4]"
                 width={1499}
                 height={1277}
                 alt=""
