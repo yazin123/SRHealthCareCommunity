@@ -100,7 +100,7 @@ const WhyUsContent = ({ className = "" }) => {
                 </motion.div>
               </div>
               <Image
-                className="absolute top-[896px] mq850:hidden right-[0px]  w-[950px] h-[587px] z-[3]"
+                className="absolute top-[896px] mq850:hidden left-[424.9px]  w-[950px] h-[587px] z-[3]"
                 loading="lazy"
                 width={850}
                 height={887}
