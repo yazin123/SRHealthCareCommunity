@@ -8,6 +8,7 @@ import FrameComponent4 from "../components/frame-component4";
 import FrameComponent5 from "../components/frame-component5";
 import FrameComponent6 from "../components/frame-component6";
 import Footer from "../components/footer";
+import Link from "next/link";
 
 const MacBookPro16 = () => {
   return (
@@ -24,8 +25,10 @@ const MacBookPro16 = () => {
 
       <Footer />
       <footer className="self-stretch [background:linear-gradient(100.75deg,_#41ebbe,_#19b78d)] flex flex-row items-start justify-start py-[22.5px] px-[107px] text-left text-7xl text-black font-lexend-deca mq450:pl-[26px] mq450:pr-[26px] mq450:box-border mq1225:pl-[53px] mq1225:pr-[53px] mq1225:box-border">
-        <div className="relative font-light text-[12px] scale-">
-          © 2024 SR Healthcare Community, All rights reserved.
+        <div className="relative font-light text-[12px] grid grid-cols-3 mq450:grid-cols-1">
+          <span>© 2024 SR Healthcare Community, All rights reserved.</span>
+          <span className="text-center"><Link href="/terms">Terms & Conditions</Link></span>
+        
         </div>
       </footer>
     </div>
