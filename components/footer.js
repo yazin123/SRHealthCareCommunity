@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Footer = ({ className = "" }) => {
   return (
-    <section
+    <section style={{borderTop:"1px solid #c4c4c4", borderRadius:"20px"}}
       className={`self-stretch bg-gray-300 w-full flex flex-row items-start justify-center py-0  box-border  text-left  text-black font-lexend-deca  mq1225:box-border ${className}`}
     >
       <div className="flex mq850:block  px-4  items-start justify-evenly gap-16 w-full  ">

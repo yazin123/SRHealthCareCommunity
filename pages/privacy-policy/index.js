@@ -14,18 +14,6 @@ const TermsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Privacy Policy Section */}
           <PrivacyPolicy />
-
-
-          {/* Terms and Conditions Section */}
-          <Terms />
-
-          {/* Cancellation and Refund Policy Section */}
-          <RefundPolicy />
-          {/* Shipping and Delivery Policy Section */}
-          <ShippingPolicy />
-
-          {/* Business Policy Framework Section */}
-          <BusinessPolicy />
         </div>
       </div>
     </div>

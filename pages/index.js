@@ -25,9 +25,12 @@ const MacBookPro16 = () => {
 
       <Footer />
       <footer className="self-stretch [background:linear-gradient(100.75deg,_#41ebbe,_#19b78d)] flex flex-row items-start justify-start py-[22.5px] px-[107px] text-left text-7xl text-black font-lexend-deca mq450:pl-[26px] mq450:pr-[26px] mq450:box-border mq1225:pl-[53px] mq1225:pr-[53px] mq1225:box-border">
-        <div className="relative font-light text-[12px] grid grid-cols-3 mq450:grid-cols-1">
+        <div className="relative font-light text-[12px] grid grid-cols-5 mq450:grid-cols-1">
           <span>© 2024 SR Healthcare Community, All rights reserved.</span>
-          <span className="text-center"><Link href="/terms">Terms & Conditions</Link></span>
+          <span className="text-center"><Link href="/terms-and-conditions">Terms & Conditions</Link></span>
+          <span className="text-center"><Link href="/privacy-policy">Privacy Policy</Link></span>
+          <span className="text-center"><Link href="/refund-policy">Refund Policy</Link></span>
+          <span className="text-center"><Link href="/shipping-and-delivery">Shipping and Delivery</Link></span>
         
         </div>
       </footer>
